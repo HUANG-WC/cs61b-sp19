@@ -19,8 +19,8 @@ public class StdDrawDemo {
 		  * Only when you call show() does your drawing get copied from the
 		  * offscreen canvas to the onscreen canvas, where it is displayed
 		  * in the standard drawing window. */
-		StdDraw.enableDoubleBuffering();
-
+		
+	    StdDraw.enableDoubleBuffering();
 		/** Sets up the universe so it goes from
 		  * -100, -100 up to 100, 100 */
 		StdDraw.setScale(-100, 100);
@@ -35,7 +35,7 @@ public class StdDrawDemo {
 
 		/* Shows the drawing to the screen, and waits 2000 milliseconds. */
 		StdDraw.show();
-		StdDraw.pause(2000);
+		StdDraw.pause(100);
 	}
 
 	/* Draws random copies of the image, clearing in between
@@ -107,8 +107,8 @@ public class StdDrawDemo {
 	public static void main(String[] args) {
 		/** Try commenting out some of these calls and
 		* notice the differences. */
-		drawThree();
+		//drawThree();
 		//drawRandom();
-		//drawZoom();
+		drawZoom();
 	}
 }
